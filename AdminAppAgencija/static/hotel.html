@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hoteli</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/hotelScript.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="col-sm-3 float-end">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" id="search_q" placeholder="Search">
+      <button class="btn btn-primary" type="button" id="btn_filter">Filter</button>
+    </div>
+  </div>
+  <table class="table table-bordered table-striped">
+    <thead>
+        <tr id="tabela" class="tabela">
+            <th>id</th>
+            <th>Ime</th>
+            <th>Zvezdice</th>
+            <th>DestinacijaID</th>
+        </tr>
+    </thead>
+    <tbody id="lista">
+      
+    </tbody>
+  </table>
+  <div class="card">
+    <div class="card-body">
+      <h4>Dodaj novi hotel</h4>
+      <form id="noviHotel">
+      <div class="row">
+          <div class="col-sm-6">
+            <div class="mb-3">
+              <label for="novi_id" class="form-label">Id:</label>
+              <input type="text" class="form-control" id="novi_id">
+            </div>
+            <div class="mb-3">
+              <label for="novo_ime" class="form-label">Ime:</label>
+              <input type="text" class="form-control" id="novo_ime">
+            </div>
+            <div class="mb-3">
+                <label for="nove_zvezdice" class="form-label">Zvezdice:</label>
+                <input type="text" class="form-control" id="nove_zvezdice">
+              </div>
+              <div class="mb-3">
+                <label for="nova_destinacija" class="form-label">destinacijaID:</label>
+                <select for="nova_destinacija" class="form-select" id="nova_destinacija">
+                  </select>
+              </div>
+          </div>
+          <button type="button" class="btn btn-primary" id="btn_dodaj">Dodaj</button>
+          <button type="button" class="btn btn-primary" id="btn_azuriraj">Azuriraj</button>
+          <button type="button" class="btn btn-primary" id="btn_obrisi">Obrisi</button>
+      </div>
+    </div>
+  </div>
+</form> 
+</div>
+</body>
+</html> 

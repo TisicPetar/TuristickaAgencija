@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "petar0306",
+    "database": "skript_projekat",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "root1234",
+    "database": "skript_projekat",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mariadb"
+  }
+}

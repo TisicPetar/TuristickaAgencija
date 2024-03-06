@@ -1,0 +1,23 @@
+
+probaj ovo da iz modela izvuces migraciju: ./node_modules/.bin/sequelize migration:create --name create-users
+(https://levelup.gitconnected.com/creating-sequelize-associations-with-the-sequelize-cli-tool-d83caa902233)
+
+npx sequelize-cli model:generate --name Destinacija --attributes grad:string,drzava:string
+npx sequelize-cli model:generate --name Hotel --attributes ime:string,zvezdice:integer
+npx sequelize-cli model:generate --name Trajanje --attributes dani:integer
+npx sequelize-cli model:generate --name Pansion --attributes naziv:string 
+npx sequelize-cli model:generate --name Aranzman --attributes naziv:string
+npx sequelize-cli model:generate --name Godina --attributes godina:integer
+npx sequelize-cli model:generate --name Sezona --attributes sezona:string
+npx sequelize-cli model:generate --name Cenovnik --attributes cena:integer
+npx sequelize-cli model:generate --name Placanje --attributes nacin:string
+npx sequelize-cli model:generate --name Korisnik --attributes ime:string,prezime:string,email:string,sifra:string,telefon:integer,admin:boolean,moderator:boolean
+npx sequelize-cli model:generate --name Racun --attributes popust:integer
+
+npx sequelize-cli seed:generate --name stavka (generisanje seedera)
+
+
+cd c:\xampp\mysql\bin mysql -u root -p
+node node_modules/sequelize-cli/lib/sequelize db:migrate
+node node_modules/sequelize-cli/lib/sequelize db:seed:all
+node node_modules/sequelize-cli/lib/sequelize db:migrate:undo:all
